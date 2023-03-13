@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: litethinking-project-final
-        image: legendarioj4r/litethinking_project_final:v3
+        image: legendarioj4r/litethinking_project_final:v5
         ports:
         - containerPort: 80
 
