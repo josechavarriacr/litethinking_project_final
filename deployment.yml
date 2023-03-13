@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: litethinking-project-final-deployment
+  labels:
+    app: litethinking-project-final
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: litethinking-project-final
+  template:
+    metadata:
+      labels:
+        app: litethinking-project-final
+    spec:
+      containers:
+      - name: litethinking-project-final
+        image: legendarioj4r/litethinking_project_final:v2
+        ports:
+        - containerPort: 80
+
